@@ -1,0 +1,6 @@
+[user]
+    name = Camila Jimenez
+    email = camilajimenezlopez@gmail.com
+
+[core]
+    sshCommand = ssh -i ~/.ssh/id_ed25519_personal 
