@@ -6,7 +6,6 @@ import { contact } from '@/utils/const';
 export const Contact = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h2>Contact me</h2>
       {contact?.map((item) => (
         <Link
           key={item.link}

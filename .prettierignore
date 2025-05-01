@@ -1,13 +1,10 @@
 .next
 node_modules
-public
 build
 dist
-coverage
-*.log
+.vercel
+public
+**/generated/*
 package-lock.json
 yarn.lock
-.vercel
-.env*
-.vscode
 pnpm-lock.yaml 
