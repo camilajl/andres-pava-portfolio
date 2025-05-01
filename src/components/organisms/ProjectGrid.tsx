@@ -26,4 +26,4 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       ))}
     </div>
   );
-} 
+}

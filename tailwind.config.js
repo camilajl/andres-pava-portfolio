@@ -12,9 +12,9 @@ module.exports = {
         foreground: 'var(--foreground)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
-        tertiary: 'var(--tertiary)',
+        gray: 'var(--gray)',
       },
     },
   },
   plugins: [],
-} 
+};
