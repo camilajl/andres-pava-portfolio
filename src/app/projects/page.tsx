@@ -5,4 +5,4 @@ export default function ProjectsPage() {
       {/* Lista de proyectos irá aquí */}
     </main>
   );
-} 
+}
