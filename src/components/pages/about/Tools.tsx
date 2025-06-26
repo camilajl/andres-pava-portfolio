@@ -9,7 +9,7 @@ export const Tools = () => {
         {tools?.map((item) => (
           <div className="flex items-center gap-3" key={item.name}>
             <Icon icon='mdi:circle' className="w-1.5 h-1.5 text-neutral-700" />
-            <span className="text-neutral-700">{item.name}</span>
+            <span className="text-neutral-700 dark:text-white">{item.name}</span>
           </div>
         ))}
       </div>

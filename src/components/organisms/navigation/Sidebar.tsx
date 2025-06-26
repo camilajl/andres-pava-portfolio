@@ -8,9 +8,10 @@ import { usePathname } from 'next/navigation';
 interface SidebarProps {
   isOpen: boolean;
   isMobile: boolean;
+  onClose: () => void;
 }
 
-export const Sidebar = ({ isOpen, isMobile }: SidebarProps) => {
+export const Sidebar = ({ isOpen, isMobile, onClose }: SidebarProps) => {
   const sidebarClasses = `fixed left-0 top-0 h-screen bg-primary shadow-lg transition-all duration-300 z-40 ${
     isMobile ? (isOpen ? 'w-[50%] md:w-[70%] translate-x-0' : 'w-[50%] md:w-[70%] -translate-x-full') : 'w-[15%]'
   }`;
@@ -19,6 +20,12 @@ export const Sidebar = ({ isOpen, isMobile }: SidebarProps) => {
 
   const isCurrentPage = (path: string) => {
     return path === pathname;
+  };
+
+  const handleLinkClick = () => {
+    if (isMobile) {
+      onClose();
+    }
   };
 
   return (
@@ -33,7 +40,7 @@ export const Sidebar = ({ isOpen, isMobile }: SidebarProps) => {
         <div className="flex flex-col h-full gap-8">
           <div className="relative w-full aspect-square mb-10">
             <Image
-              src={'/pexels-hamidtajikph-17388092.jpg'}
+              src={'/foto_mejorada.png'}
               alt={'Skills'}
               fill
               className="object-cover"
@@ -53,6 +60,7 @@ export const Sidebar = ({ isOpen, isMobile }: SidebarProps) => {
                   }
                 `}
                 href={link.href}
+                onClick={handleLinkClick}
               >
                 {link.label}
               </Link>

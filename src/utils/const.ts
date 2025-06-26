@@ -19,17 +19,17 @@ export const links = [
 
 export const contact = [
   {
-    icon: 'arcticons:mymail',
+    icon: 'mdi:email',
     link: 'mailto:pavacanofelipe@outlook.com',
     text: 'pavacanofelipe@outlook.com',
   },
   {
-    icon: 'arcticons:phone-alt-1',
+    icon: 'mdi:phone',
     link: 'tel:+573235037324',
     text: '(+57) 323 503 7324',
   },
   {
-    icon: 'arcticons:linkedin',
+    icon: 'mdi:linkedin',
     link: 'https://www.linkedin.com/in/andresfelipepavacano-dataanalyst/',
     text: 'andresfelipepava',
   },
@@ -133,5 +133,9 @@ export const projects = [
   {
     projectName: 'Modern Portfolio Theory (MPT)',
     htmlFile: 'MTP.html'
+  },
+  {
+    projectName: 'Predicting Financial Market Part 1',
+    htmlFile: 'Predicting_Financial_Market.html'
   },
 ]
