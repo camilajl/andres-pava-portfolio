@@ -16,6 +16,10 @@ export const SidebarWrapper = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
+
   if (isHomePage) {
     return null;
   }
@@ -33,7 +37,7 @@ export const SidebarWrapper = () => {
           />
         </button>
       )}
-      <Sidebar isOpen={isOpen} isMobile={isMobileDevice} />
+      <Sidebar isOpen={isOpen} isMobile={isMobileDevice} onClose={closeSidebar} />
     </>
   );
 };
